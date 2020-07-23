@@ -1,0 +1,6 @@
+n=input()
+input_list=input().split()
+
+input_list=[int(x) for x in input_list]
+
+print (hash(tuple(input_list)))
