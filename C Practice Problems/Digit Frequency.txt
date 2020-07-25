@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char ch;
+    int seq[]={0,0,0,0,0,0,0,0,0,0};
+    while(scanf("%c",&ch)==1)
+    {
+            if(ch>='0' && ch<='9')
+        {
+            seq[ch-'0']+=1;
+        }
+    }
+   for(int i=0;i<10;i++)
+    {
+        printf("%d ",seq[i]);
+    }
+    return 0;
+}
